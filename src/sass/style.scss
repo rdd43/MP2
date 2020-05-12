@@ -58,11 +58,18 @@ body {
 /* Carousel attributes so that the arrows are black and placed correctly*/
 .carousel-control-next-icon:after {content: '>';}
 .carousel-control-prev-icon:after {content: '<';}
-.carousel-control-prev-icon, .carousel-control-next-icon {
+.carousel-control-prev-icon, .carousel-control-next-icon,{
     margin-bottom: 3rem;
     background-image: none;
     font-size: 55px;
     color: black;
+}
+.carousel-indicators li {
+    width: 20px;
+    height: 10px;
+    background-color: black;
+}
+.carousel-indicators .active {
 }
 /* Declare heights because of positioning of img element */
 .carousel-item {
