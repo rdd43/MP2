@@ -52,10 +52,18 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-    bottom: 3rem;
+    bottom: 0rem;
     z-index: 10;
 }
-
+/* Carousel attributes so that the arrows are black and placed correctly*/
+.carousel-control-next-icon:after {content: '>';}
+.carousel-control-prev-icon:after {content: '<';}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    margin-bottom: 3rem;
+    background-image: none;
+    font-size: 55px;
+    color: black;
+}
 /* Declare heights because of positioning of img element */
 .carousel-item {
     height: 32rem;
@@ -111,6 +119,7 @@ body {
         font-size: 1.25rem;
         line-height: 1.4;
     }
+
 
     .featurette-heading {
         font-size: 50px;
